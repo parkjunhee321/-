@@ -8,6 +8,7 @@ import Provider from './provider';
 const CoreApp = React.lazy(() => import('./routes'));
 const LoginApp = React.lazy(() => import('@myorg/login'));
 const PostsApp = React.lazy(() => import('@myorg/posts'));
+const AppsApp = React.lazy(() => import('@myorg/apps'));
 
 function DefaultFallback({ children, fallback }) {
   return (
@@ -36,6 +37,11 @@ function Apps() {
       <Route path="/">
         <DefaultFallback>
           <CoreApp />
+        </DefaultFallback>
+      </Route>
+      <Route path="/apps">
+        <DefaultFallback>
+          <AppsApp />
         </DefaultFallback>
       </Route>
     </Switch>

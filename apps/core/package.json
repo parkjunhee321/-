@@ -12,6 +12,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
+    "@myorg/apps": "workspace:^",
     "@myorg/login": "workspace:*",
     "@myorg/posts": "workspace:*",
     "@myorg/shared": "workspace:*",
